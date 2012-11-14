@@ -1,0 +1,28 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+
+	</ui:style>
+	<g:HTMLPanel>
+	
+		<g:MenuBar>
+		
+			<g:MenuItem>Demandes d'absence
+				<g:MenuBar vertical="true">
+					<g:MenuItem ui:field="absence_consultation">Consultation</g:MenuItem>
+					<g:MenuItem ui:field="absence_demande">Demande</g:MenuItem>
+				</g:MenuBar>	
+			</g:MenuItem>
+			
+			<g:MenuItem ui:field="temps_passes" text="Temps passés" />
+			
+			<g:MenuItem ui:field="page_soumission" text="Page de soumission" />
+			
+			<g:MenuItemSeparator />
+			
+			<g:MenuItem ui:field="deconnexion" text="Déconnexion" ></g:MenuItem>
+			
+		</g:MenuBar>
+	</g:HTMLPanel>
+</ui:UiBinder> 

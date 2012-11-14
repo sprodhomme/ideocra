@@ -1,0 +1,18 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.pieddepage {
+			font-family: Verdana;
+			font-size: 10;
+			color: #aaaaaa;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+	
+		<g:HorizontalPanel>
+			<g:HTML text="&copy; 2002 - 2012 Ideo Technologies&trade;" styleName="{style.pieddepage}" />
+		</g:HorizontalPanel>
+		
+	</g:HTMLPanel>
+</ui:UiBinder> 

@@ -1,0 +1,18 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.contenu { width: "70%"; }
+		.options { width: "30%"; }
+	</ui:style>
+	<g:HTMLPanel>
+	
+		<g:ScrollPanel ui:field="contenu_scrollpanel">
+			<g:HorizontalPanel>
+				<g:VerticalPanel ui:field="contenu_contenu" styleName="{style.contenu}"/>
+				<g:VerticalPanel ui:field="contenu_options" styleName="{style.options}" />
+			</g:HorizontalPanel>
+		</g:ScrollPanel>
+	
+	</g:HTMLPanel>
+</ui:UiBinder> 

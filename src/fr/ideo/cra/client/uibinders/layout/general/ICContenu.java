@@ -1,0 +1,30 @@
+package fr.ideo.cra.client.uibinders.layout.general;
+
+import com.google.gwt.core.client.GWT;
+import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.user.client.Window;
+import com.google.gwt.user.client.ui.Composite;
+import com.google.gwt.user.client.ui.ScrollPanel;
+import com.google.gwt.user.client.ui.VerticalPanel;
+import com.google.gwt.user.client.ui.Widget;
+
+public class ICContenu extends Composite {
+
+	private static ICContenuUiBinder uiBinder = GWT
+			.create(ICContenuUiBinder.class);
+
+	@UiField ScrollPanel contenu_scrollpanel;
+	@UiField VerticalPanel contenu_contenu;
+	@UiField VerticalPanel contenu_options;
+	
+	interface ICContenuUiBinder extends UiBinder<Widget, ICContenu> {
+	}
+
+	public ICContenu() {
+		initWidget(uiBinder.createAndBindUi(this));
+		int height = Window.getClientHeight() - 200;
+		contenu_scrollpanel.setHeight(height+"px");
+	}
+
+}

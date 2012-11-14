@@ -1,0 +1,18 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:h="urn:import:fr.ideo.cra.client.uibinders.layout.general">
+	<ui:style>
+		
+	</ui:style>
+	<g:HTMLPanel>
+	
+		<g:VerticalPanel>
+			<h:ICEntete />
+			<h:ICMenu ui:field="menu"/>
+			<h:ICContenu ui:field="contenu"/>
+			<h:ICPiedDePage />
+		</g:VerticalPanel>
+	
+	</g:HTMLPanel>
+</ui:UiBinder> 
