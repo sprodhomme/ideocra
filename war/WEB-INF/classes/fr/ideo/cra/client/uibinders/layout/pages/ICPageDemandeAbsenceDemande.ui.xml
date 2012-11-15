@@ -6,6 +6,8 @@
 	</ui:style>
 	<g:HTMLPanel>
 		<g:Button ui:field="absence_demande_boutonajouter">Ajouter une demande d'absence</g:Button>
-		<g:VerticalPanel ui:field="absence_demande_contenu"/>
+		<g:ScrollPanel ui:field="absence_demande_scrollpanel">
+			<g:VerticalPanel ui:field="absence_demande_contenu"/>
+		</g:ScrollPanel>
 	</g:HTMLPanel>
 </ui:UiBinder> 

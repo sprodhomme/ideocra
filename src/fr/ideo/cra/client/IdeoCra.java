@@ -1,5 +1,6 @@
 package fr.ideo.cra.client;
 
+
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.user.client.ui.RootPanel;
 
@@ -16,6 +17,7 @@ public class IdeoCra implements EntryPoint {
 	public void onModuleLoad() {
 		ICRootView vue = new ICRootView();
 		RootPanel.get().add(vue);
+		
 		
 //		DateBox dateBox = new DateBox();
 //	    dateBox.setValue(new Date());

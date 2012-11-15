@@ -32,13 +32,13 @@ public class ICPageDemandeAbsenceConsultation extends Composite {
 		demandes.add(d2);
 		demandes.add(d3);
 		
-		ICPageDemandeAbsenceConsultation.initData(demandes);
+		initData(demandes);
 	}
 	
-	public static void initData(List<DemandeAbsence> demandes) {
+	public void initData(List<DemandeAbsence> demandes) {
 		for (DemandeAbsence demande : demandes) {
 			// TODO : ajout d'une ligne bien formattee de demande d'absence (en consultation)
-			ICDemandeAbsence ligne = new ICDemandeAbsence(demande);
+			absence_consultation_contenu.add(new ICDemandeAbsence(demande));
 		}
 	}
 

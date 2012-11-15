@@ -7,10 +7,12 @@
 	</ui:style>
 	<g:HTMLPanel>
 	
+	<g:Image ui:field="imageLoading" url="chargement.gif" visible="true"/>
+	
 		<g:ScrollPanel ui:field="contenu_scrollpanel">
 			<g:HorizontalPanel>
 				<g:VerticalPanel ui:field="contenu_contenu" styleName="{style.contenu}"/>
-				<g:VerticalPanel ui:field="contenu_options" styleName="{style.options}" />
+				<g:VerticalPanel ui:field="contenu_options" styleName="{style.options}"/>
 			</g:HorizontalPanel>
 		</g:ScrollPanel>
 	
