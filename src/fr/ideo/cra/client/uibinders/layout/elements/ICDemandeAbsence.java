@@ -29,29 +29,10 @@ public class ICDemandeAbsence extends Composite {
 
 	public ICDemandeAbsence() {
 		initWidget(uiBinder.createAndBindUi(this));
-		List<String> typesDeConges = new ArrayList<String>();
-		typesDeConges.add("CP");
-		typesDeConges.add("RTT");
-		typesDeConges.add("CM");
-		typesDeConges.add("CPaternite");
-		
-		for(String type : typesDeConges) {
-			absence_types.addItem(type);
-		}
 	}
 	
 	public ICDemandeAbsence(DemandeAbsence demande) {
 		initWidget(uiBinder.createAndBindUi(this));
-		
-		List<String> typesDeConges = new ArrayList<String>();
-		typesDeConges.add("CP");
-		typesDeConges.add("RTT");
-		typesDeConges.add("CM");
-		typesDeConges.add("CPaternite");
-		
-		for(String type : typesDeConges) {
-			absence_types.addItem(type);
-		}
 		
 		this.demande = demande;
 		try {absence_types.setItemSelected(demande.getType(), true);} catch (Exception e) {System.err.println("Pas d'elements dans la liste des types de conges ou liste incompatible de par son nombre d'elements");}
