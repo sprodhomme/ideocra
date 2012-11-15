@@ -7,7 +7,6 @@ import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Composite;
-import com.google.gwt.user.client.ui.Image;
 import com.google.gwt.user.client.ui.ScrollPanel;
 import com.google.gwt.user.client.ui.VerticalPanel;
 import com.google.gwt.user.client.ui.Widget;
@@ -16,7 +15,6 @@ public class ICContenu extends Composite {
 
 	private static ICContenuUiBinder uiBinder = GWT.create(ICContenuUiBinder.class);
 
-	@UiField Image imageLoading;
 	@UiField ScrollPanel contenu_scrollpanel;
 	@UiField VerticalPanel contenu_contenu;
 	@UiField VerticalPanel contenu_options;
@@ -30,7 +28,6 @@ public class ICContenu extends Composite {
 			public void execute() {
 				int height = Window.getClientHeight() - 200;
 				contenu_scrollpanel.setHeight(height+"px");
-				imageLoading.setVisible(false);
 			}
 		});
 		
