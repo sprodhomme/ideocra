@@ -17,26 +17,5 @@ public class IdeoCra implements EntryPoint {
 	public void onModuleLoad() {
 		ICRootView vue = new ICRootView();
 		RootPanel.get().add(vue);
-		
-		
-//		DateBox dateBox = new DateBox();
-//	    dateBox.setValue(new Date());
-//	    RootPanel.get().add(dateBox);
-		
-//		final DatePicker date = new DatePicker();
-//		RootPanel.get().add(date);
-//		date.setVisible(true);
-//		
-//		RootPanel.get().add(new Label("Date : "));
-//		
-//		final DateLabel ldate = new DateLabel();
-//		RootPanel.get().add(ldate);
-//		
-//		
-//		date.addValueChangeHandler(new ValueChangeHandler<Date>() {
-//		      public void onValueChange(ValueChangeEvent<Date> event) {
-//				ldate.setValue(date.getHighlightedDate());
-//			}
-//		});
 	}
 }
