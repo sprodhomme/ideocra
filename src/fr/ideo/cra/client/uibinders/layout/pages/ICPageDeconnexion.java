@@ -25,9 +25,11 @@ public class ICPageDeconnexion extends Composite {
 	@UiHandler("deconnexion_boutonoui")
 	void onDeconnexion_boutonouiClick(ClickEvent event) {
 		ICRootView.showLoading();
+		// TODO deconnecter
 	}
 	@UiHandler("deconnexion_boutonnon")
 	void onDeconnexion_boutonnonClick(ClickEvent event) {
 		ICRootView.loading.setVisible(false);
+		// TODO revenir a l'accueil
 	}
 }

@@ -102,7 +102,7 @@ public class ICRootView extends Composite {
 
 	private void clearAndLoading() {
 		showLoading();
-		int width = Math.min(menu.getOffsetWidth(), 1000);
+		int width = Math.min(menu.getOffsetWidth(), 500);
 		contenu.contenu_contenu.setWidth(width + "px");
 		Scheduler.get().scheduleEntry(new ScheduledCommand() {
 			public void execute() {
