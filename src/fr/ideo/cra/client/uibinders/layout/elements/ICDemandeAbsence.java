@@ -4,6 +4,7 @@ import com.google.gwt.core.client.GWT;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiConstructor;
 import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.ListBox;
@@ -12,6 +13,7 @@ import com.google.gwt.user.client.ui.Widget;
 import com.google.gwt.user.datepicker.client.DateBox;
 
 import fr.ideo.cra.client.classes.DemandeAbsence;
+import fr.ideo.cra.client.ressources.ICConstantes;
 
 public class ICDemandeAbsence extends Composite {
 
@@ -33,7 +35,6 @@ public class ICDemandeAbsence extends Composite {
 	
 	interface ICDemandeAbsenceUiBinder extends UiBinder<Widget, ICDemandeAbsence> {}
 
-	@UiConstructor
 	public ICDemandeAbsence() {
 		nombreDemandes++;
 		
@@ -44,5 +45,12 @@ public class ICDemandeAbsence extends Composite {
 		
 		datedefin_matin.setName("fin-" + nombreDemandes);
 		datedefin_apresmidi.setName("fin-" + nombreDemandes);
+		
+		
+		//TODO revoir la definition du singleton ICConstantes
+		ICConstantes.get();
+		for(int index=0; index<ICConstantes.getTypesAbsences().size(); index++) {
+			absence_types.insertItem(ICConstantes.getTypesAbsences().get(index), index);
+		}
 	}
 }

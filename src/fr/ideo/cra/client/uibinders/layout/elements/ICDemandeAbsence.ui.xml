@@ -17,12 +17,7 @@
 			<tr>
 				<td>Type d'absence :</td>
 				<td>
-					<g:ListBox ui:field="absence_types">
-						<g:item>CP - Congés payés</g:item>
-						<g:item>RTT - Réduction du Temps de Travail</g:item>
-						<g:item>CM - Congé maternité</g:item>
-						<g:item>CPA - Congé paternité</g:item>
-					</g:ListBox>
+					<g:ListBox ui:field="absence_types"/>
 				</td>
 				<td>
 					<g:VerticalPanel>

@@ -32,7 +32,6 @@ public class ICPageDemandeAbsenceDemande extends Composite {
 
 	@UiHandler("absence_demande_boutonajouter")
 	void onButtonClick(ClickEvent event) {
-		//TODO Add the corresponding list
 		ICDemandeAbsence demande = new ICDemandeAbsence();
 		absence_demande_contenu.add(demande);
 	}

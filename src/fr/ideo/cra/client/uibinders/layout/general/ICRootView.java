@@ -11,7 +11,7 @@ import com.google.gwt.user.client.ui.Widget;
 
 import fr.ideo.cra.client.ressources.ICImageBundle;
 import fr.ideo.cra.client.uibinders.layout.pages.ICPageDeconnexion;
-import fr.ideo.cra.client.uibinders.layout.pages.ICPageDemandeAbsenceConsultation;
+import fr.ideo.cra.client.uibinders.layout.pages.ICPageAbsenceConsultation;
 import fr.ideo.cra.client.uibinders.layout.pages.ICPageDemandeAbsenceDemande;
 import fr.ideo.cra.client.uibinders.layout.pages.ICPageSoumission;
 import fr.ideo.cra.client.uibinders.layout.pages.ICPageTempsPasses;
@@ -45,7 +45,7 @@ public class ICRootView extends Composite {
 				clearAndLoading();
 				Scheduler.get().scheduleEntry(new ScheduledCommand() {
 					public void execute() {
-						contenu.contenu_contenu.add(new ICPageDemandeAbsenceConsultation());
+						contenu.contenu_contenu.add(new ICPageAbsenceConsultation());
 						Scheduler.get().scheduleFinally(new ScheduledCommand() {
 							public void execute() {
 								closeLoading();
