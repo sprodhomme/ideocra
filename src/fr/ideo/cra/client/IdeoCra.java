@@ -24,8 +24,6 @@ public class IdeoCra implements EntryPoint {
 		
 		/*
 		
-		
-		
 		Date today = new Date();
 		
 		String jour = ICPageTempsPasses.getListeJoursSemaine().get("Thu");

@@ -12,6 +12,7 @@
 		}
 	</ui:style>
 	<g:HTMLPanel>
+	
 		<table>
 			<tr>
 				<td>Type d'absence :</td>

@@ -18,14 +18,16 @@ import fr.ideo.cra.client.uibinders.layout.pages.ICPageTempsPasses;
 
 public class ICRootView extends Composite {
 
-	private static ICRootViewUiBinder uiBinder = GWT.create(ICRootViewUiBinder.class);
+	private static ICRootViewUiBinder uiBinder = GWT
+			.create(ICRootViewUiBinder.class);
 
 	public static ICImageBundle R = GWT.create(ICImageBundle.class);
 	public static final Image loading = new Image(R.chargement());
-	
+
 	@UiField
 	static ICMenu menu;
-	static @UiField ICContenu contenu;
+	static @UiField
+	ICContenu contenu;
 
 	interface ICRootViewUiBinder extends UiBinder<Widget, ICRootView> {
 	}
@@ -44,12 +46,16 @@ public class ICRootView extends Composite {
 				Scheduler.get().scheduleEntry(new ScheduledCommand() {
 					public void execute() {
 						contenu.contenu_contenu.add(new ICPageDemandeAbsenceConsultation());
-						closeLoading();
+						Scheduler.get().scheduleFinally(new ScheduledCommand() {
+							public void execute() {
+								closeLoading();
+							}
+						});
 					}
 				});
 			}
 		});
-		
+
 		menu.absence_demande.setScheduledCommand(new ScheduledCommand() {
 			public void execute() {
 				clearAndLoading();
@@ -61,7 +67,7 @@ public class ICRootView extends Composite {
 				});
 			}
 		});
-		
+
 		menu.temps_passes.setScheduledCommand(new ScheduledCommand() {
 			public void execute() {
 				clearAndLoading();
@@ -73,7 +79,7 @@ public class ICRootView extends Composite {
 				});
 			}
 		});
-		
+
 		menu.page_soumission.setScheduledCommand(new ScheduledCommand() {
 			public void execute() {
 				clearAndLoading();
@@ -85,7 +91,7 @@ public class ICRootView extends Composite {
 				});
 			}
 		});
-		
+
 		menu.deconnexion.setScheduledCommand(new ScheduledCommand() {
 			public void execute() {
 				clearAndLoading();
@@ -97,24 +103,24 @@ public class ICRootView extends Composite {
 				});
 			}
 		});
-		
+
 	}
 
 	private void clearAndLoading() {
 		showLoading();
-		int width = Math.min(menu.getOffsetWidth(), 500);
-		contenu.contenu_contenu.setWidth(width + "px");
+		// int width = Math.min(menu.getOffsetWidth(), 500);
+		// contenu.contenu_contenu.setWidth(width + "px");
 		Scheduler.get().scheduleEntry(new ScheduledCommand() {
 			public void execute() {
 				contenu.contenu_contenu.clear();
-		}
+			}
 		});
 	}
-	
+
 	public static void showLoading() {
 		loading.setVisible(true);
 	}
-	
+
 	protected static void closeLoading() {
 		Scheduler.get().scheduleFinally(new ScheduledCommand() {
 			public void execute() {
