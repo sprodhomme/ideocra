@@ -42,7 +42,7 @@ public class ICDemandeAbsence extends Composite {
 		datededebut_matin.setName("debut-" + nombreDemandes);
 		datededebut_apresmidi.setName("debut-" + nombreDemandes);
 		
-		datededebut_matin.setName("fin-" + nombreDemandes);
-		datededebut_apresmidi.setName("fin-" + nombreDemandes);
+		datedefin_matin.setName("fin-" + nombreDemandes);
+		datedefin_apresmidi.setName("fin-" + nombreDemandes);
 	}
 }
