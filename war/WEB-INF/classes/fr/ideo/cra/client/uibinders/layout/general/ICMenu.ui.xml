@@ -19,7 +19,6 @@
 			
 			<g:MenuItem ui:field="page_soumission" text="Page de soumission" />
 			
-			<g:MenuItemSeparator/>
 			
 			<g:MenuItem ui:field="deconnexion" text="Déconnexion" ></g:MenuItem>
 			

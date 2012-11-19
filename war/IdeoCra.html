@@ -24,6 +24,7 @@
     <!-- be added before this line.                -->
     <!--                                           -->
     <script type="text/javascript" language="javascript" src="ideocra/ideocra.nocache.js"></script>
+    <script type="text/javascript" language="javascript" src="ideocra/angular-1.0.1.js"></script>
   </head>
 
   <!--                                           -->
@@ -43,6 +44,22 @@
         in order for this application to display correctly.
       </div>
     </noscript>
+
+<!--     <div ng-app>
+      <label>Nom:</label>
+      <input type="text" ng-model="VotreNom"/>
+      <hr/>
+      <h1>Bonjour {{VotreNom}} !</h1>
+    </div> -->
+    
+    <img id="loading" src="chargment.gif"/>
+    
+    <div ng-app id="connexion">
+    	<label>Login :</label><input type="text" ng-model="login"/>
+    	<br />
+    	<label>Mot de passe :</label><input type="password" ng-model="password"/>
+    	<h1>On a : {{login}} avec : {{password}}</h1>
+    </div>
 
   </body>
 </html>
